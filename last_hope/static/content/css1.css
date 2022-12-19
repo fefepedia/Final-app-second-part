@@ -1,0 +1,46 @@
+/* Add a grey background color to the body */
+body {
+    background-color: #f3f3f3;
+}
+
+/* Make the dashboard a flex container and align the items horizontally, wrapping onto multiple lines if needed */
+.dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style the links */
+a {
+    color: #00bfff;
+    text-decoration: none;
+}
+
+    /* Add a hover effect to the links */
+    a:hover {
+        color: #333;
+    }
+
+    /* Make the "Generate report" button look like a button */
+    a.button {
+        background-color: #00bfff;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        display: inline-block;
+    }
+
+        /* Add a hover effect to the button */
+        a.button:hover {
+            background-color: #333;
+        }
+
+/* Make the text larger on small screens */
+@media (max-width: 600px) {
+    .dashboard {
+        font-size: larger;
+    }
+}
